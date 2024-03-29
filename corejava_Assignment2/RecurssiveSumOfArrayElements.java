@@ -11,8 +11,8 @@ public class RecurssiveSumOfArrayElements {
     	{
     		sum+=arr[index];
     		index++;
-    		calculateSum(arr);
-    		return sum;
+    		return calculateSum(arr);
+
     	}
 	}
 	public static void main(String[] args) {

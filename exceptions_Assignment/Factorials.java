@@ -15,8 +15,8 @@ public class Factorials {
 			}
 			catch(IllegalArgumentException e)
 			{   
-				if(val<0) System.out.println("No negative Values allowed");
-				else System.out.println("Values over 16 are not allowed");
+				 System.out.println(e.getMessage());
+				
 			}
 			System.out.println("Another factorial? ()y/n ");
 			keepGoing = scan.next();

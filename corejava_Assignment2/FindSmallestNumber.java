@@ -11,8 +11,7 @@ public class FindSmallestNumber {
     	{
     		if(arr[index]<smallest) smallest=arr[index];
     		index++;
-    		findSmallest(arr);
-    		return smallest;
+    		return findSmallest(arr);
     	}
 	}
 	public static void main(String[] args) {

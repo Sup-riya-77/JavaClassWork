@@ -16,8 +16,7 @@ public class FindSmallestNumberIndex {
     			smallestIndex=index;
     			}
     		index++;
-    		findSmallestIndex(arr);
-    		return smallestIndex;
+    		return findSmallestIndex(arr);
     	}
 	}
 	public static void main(String[] args) {

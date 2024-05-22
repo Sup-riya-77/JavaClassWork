@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/usecase.css">
+<title>Customer Information</title>
+</head>
+<body>
+<form id="customerForm">
+    <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+    <div id="nameError" style="color: red;"></div> <!-- Error message for name -->
+   </div>
+   <div class="form-group">
+    <label for="email">Email Id:</label>
+    <input type="email" id="email" name="email" required><br>
+    <div id="emailError" style="color: red;"></div> <!-- Error message for email -->
+    </div>
+    <div class="form-group">
+    <label for="phone">Contact No:</label>
+    <input type="tel" id="phone" name="phone" required><br>
+    <div id="phoneError" style="color: red;"></div> <!-- Error message for phone -->
+    </div>
+    <div class="form-group">
+    <label for="account">Account Type:</label>
+    <select id="account" name="account" required>
+        <option value="">Select account type</option>
+        <option value="Savings">Savings</option>
+        <option value="Current">current</option>
+    </select><br>
+    </div>
+    <button type="submit">Add Customer</button>
+</form>
+
+
+<br><br>
+
+<table id="customerTable">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Contact</th>
+        <th>account Type</th>
+    </tr>
+</thead>
+    <tbody>
+        <!-- Customer details will be inserted here -->
+    </tbody>
+</table>
+<script src="../js/usecase.js"></script>
+</body>
+</html>
